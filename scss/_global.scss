@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
+}
+.container{
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

@@ -1,0 +1,136 @@
+.pick__content{
+    background-image: url("../../imgs/backg2.png");
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    height: 580px;
+}
+.pick_line-box{
+    padding-top: 113px;
+    padding-left: 86px;
+    max-width: 760px;
+}
+.pick__line_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #FDD6BA;
+    background-color: #FDD6BA;
+    height: 1px;
+}
+.pick__line{
+    display: inline-block;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+}
+.pick__list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 67px;
+}
+.pick__item{
+    max-width:327px;
+}
+.pick__title{
+    font-family: 'Fraunces',serif;
+    font-style: normal;
+    max-width: 300px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA; 
+    margin-bottom: 37px;   
+}
+.pick__item-title{
+    font-family: 'Fraunces',serif;
+    max-width: 267px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+}
+.pick__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+
+@media only screen and(max-width:1050px){
+    .pick__content{
+        max-width: 1000px;
+        margin-top: 24px;
+        padding: 0;
+        padding-left: 40px;
+    }
+    .pick_line-box{
+        max-width: 0;
+        max-width: 467px;
+        padding: 0;
+        padding-top: 97px;
+    }   
+    .hero__title{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .pick__list{
+        padding: 0;
+        padding-right: 40px;
+    }
+    .pick__item{
+        max-width: 223px;
+    }
+}
+@media only screen and (max-width:650px){
+    .pick__content{
+        background-image:none;
+        background-color: #293039;
+        max-width:550px;
+        height: 1100px;
+        border-radius: 10px;
+    }
+    .pick_line-box{
+        display: none;
+    }
+    .pick__list{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 80px;
+        padding-left: 90px;
+    }
+    .pick__item{
+        max-width: 327px;
+    }
+    .pick__title{
+        text-align: none;
+        text-align: center;
+    }
+    .pick__item-title{
+        margin-bottom: 24px;
+        max-width: 0;
+        max-width: 378px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .pick__text{
+        margin-bottom: 56px;
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: 327px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
