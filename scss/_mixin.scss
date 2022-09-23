@@ -9,3 +9,8 @@
 @mixin header-link-hover {
     color: #333D4B;
 }
+@mixin font {
+    font-family: 'Fraunces',serif;
+    font-style: normal;
+    font-weight: 900;
+}

@@ -30,7 +30,7 @@
     margin-top: 67px;
 }
 .pick__item{
-    max-width:327px;
+    max-width: 315px;
 }
 .pick__title{
     font-family: 'Fraunces',serif;
@@ -61,11 +61,19 @@
 
 
 @media only screen and(max-width:1050px){
+    .pick__container{
+        margin: 0;
+        padding: 0;
+    }
     .pick__content{
-        max-width: 1000px;
+        max-width: 1050px;
         margin-top: 24px;
         padding: 0;
         padding-left: 40px;
+        border-radius: 10px;
+    }
+    .pick__title{
+        margin-bottom: 42px;
     }
     .pick_line-box{
         max-width: 0;
@@ -73,23 +81,32 @@
         padding: 0;
         padding-top: 97px;
     }   
-    .hero__title{
-        font-size: 28px;
-        line-height: 32px;
-    }
     .pick__list{
         padding: 0;
         padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
     }
     .pick__item{
-        max-width: 223px;
+        max-width: 232px;
+    }
+    .pick__item-title{
+        @include font;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 38px;
+    }
+    .pick__text{
+        font-size: 15px;
+        line-height: 25px;
     }
 }
-@media only screen and (max-width:650px){
+@media only screen and (max-width:727px){
     .pick__content{
         background-image:none;
         background-color: #293039;
-        max-width:550px;
+        width: 100%;
+        max-width:100%;
         height: 1100px;
         border-radius: 10px;
     }
@@ -100,11 +117,12 @@
         display: flex;
         flex-direction: column;
         padding: 0;
+        text-align: center;
+        padding-left: 50px;
         padding-top: 80px;
-        padding-left: 90px;
     }
     .pick__item{
-        max-width: 327px;
+        max-width: 370px;
     }
     .pick__title{
         text-align: none;
@@ -119,7 +137,6 @@
         font-weight: 900;
         font-size: 28px;
         line-height: 32px;
-        text-align: center;
         color: #FFFFFF;
     }
     .pick__text{
@@ -130,7 +147,13 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 25px;
-        text-align: center;
         color: #FFFFFF;
+    }
+}
+@media only screen and (max-width:470px){
+    .pick__list{
+        padding: 0;
+        padding-top: 80px;
+        text-align: center;
     }
 }
