@@ -54,6 +54,7 @@
     .hero__content{
         background-image: none;
         background-image: url("../../imgs/pjonr.jpg");
+        text-align: center;
         background-repeat: no-repeat;
         background-size: 760px;
         margin-left: 4px;
@@ -62,9 +63,12 @@
         margin-bottom: 120px;
     }
     .hero__title{
+        display: inline-block;
+        padding: 0;
+        margin-left: 0;
         text-align: center;
-        padding: 101px 24px 0 24px;
-        max-width: 325px;
+        padding: 101px 50px 0 24px;
+        max-width: 380px;
         @include font;
         font-size: 40px;
         line-height: 40px;
@@ -93,6 +97,8 @@
        
     }
     .hero__title{
+        @include font;
+        padding: 0;
         text-align: center;
         padding: 101px 24px 0 24px;
         max-width: 325px;

@@ -1,10 +1,10 @@
 .site-header{
     margin: 45px 80px;
 }
-.header__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header__content{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 }
 .header__list{
     display: flex;
@@ -23,8 +23,6 @@
 }
 .checkbtn{
     font-size: 30px;
-    float: right;
-    line-height: 80px;
     cursor: pointer;
     display: none;
 }
@@ -39,7 +37,7 @@
         margin-bottom: 54px;
         margin-left: 20px;
     }
-    .header__container{
+    .header__content{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -65,17 +63,18 @@
 }
 @media only screen and (max-width:727px) {
     .site-header{
+        max-width: 677px;
         margin: 0;
-        margin-top: 32px;
-        margin-right: 24px;
-        margin-bottom: 40px;
-        margin-left: 24px;
-    }
-    .header__container{
-        text-align: center;
+        margin: 32px 24px 40px 24px;
     }
     .header__logo{
         max-width: 163px;
+    }
+    .header__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
     }
     .checkbtn{
         display: block;
@@ -111,5 +110,10 @@
     }
     #check:checked ~ .header__list{
         left: 0;
+    }
+}
+@media only screen and(max-width:660px){
+    .site-header{
+        max-width: 615px;
     }
 }

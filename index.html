@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
     <title>Create your plan</title>
 </head>
 
@@ -14,7 +16,8 @@
     <header class="site-header">  
         <div class="container ">
             <div class="header__container">
-            <a class="logo__link" href="creat-your-pla.html"><img class="header__logo" src="imgs/logo.svg"
+                <div class="header__content">
+            <a class="logo__link" href="index.html"><img class="header__logo" src="imgs/logo.svg"
                     alt="site__logo"></a>
                     <input type="checkbox" class="chek" id="check">
                     <label for="check" class="checkbtn">
@@ -76,13 +79,185 @@
             </div>
         </section>
         <section class="drink-section">
-            <div class="container">
-                <div class="drink__content">
-                    
+            <div class="container drink__container">
+                <div class="drink__content_list">
+                    <ul class="drink__list">
+                        <li class="drink__item">
+                            <span class="drink__item_number">01</span>
+                            <a class="drink__item_link" href="#Preferences">Preferences</a>
+                            <span class="drink__item_line"></span>
+                        </li>
+                        <li class="drink__item">
+                            <span class="drink__item_number">02</span>
+                            <a class="drink__item_link" href="#BeanType">Bean Type</a>
+                            <span class="drink__item_line"></span>
+                        </li>
+                        <li class="drink__item">
+                            <span class="drink__item_number">03</span>
+                            <a class="drink__item_link" href="#Quantity">Quantity</a>
+                            <span class="drink__item_line"></span>
+                        </li>
+                        <li class="drink__item">
+                            <span class="drink__item_number">04</span>
+                            <a class="drink__item_link" href="#GrindOption">Grind Option</a>
+                            <span class="drink__item_line"></span>
+                        </li>
+                        <li class="drink__item">
+                            <span class="drink__item_number">05</span>
+                            <a class="drink__item_link" href="#deliveries">Deliveries</a>
+                        </li>
+                    </ul>
+                    <div class="column">
+                    <div class="type__content" id="Preferences">
+                        <div class="type__content_img">
+                        <h2 class="type__title_img">How do you drink your coffee?</h2>
+                        <img src="imgs/pastga.svg" alt="" width="16" height="11">
+                         </div>
+                        <ul class="type__coffe_list">
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Capsule</h2>
+                                <p class="type__coffe_text">Compatible with Nespresso systems and similar brewers</p>
+                            </li>
+                            <li class="color__white1">
+                                <h2 class="color__white">Filter</h2>
+                                <p class="color__white2">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Espresso</h2>
+                                <p class="type__coffe_text">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="type__content" id="BeanType">
+                        <div class="type__content_img">
+                        <h2 class="type__title_img">How do you drink your coffee?</h2>
+                        <img src="imgs/pastga.svg" alt="" width="16" height="11">
+                         </div>
+                        <ul class="type__coffe_list">
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Single Origin</h2>
+                                <p class="type__coffe_text">Distinct, high quality coffee from a specific family-owned farm</p>
+                            </li>
+                            <li class="color__white1">
+                                <h2 class="color__white">Decaf</h2>
+                                <p class="color__white2">Just like regular coffee, except the caffeine has been removed</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Blended</h2>
+                                <p class="type__coffe_text">Combination of two or three dark roasted beans of organic coffees</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="type__content" id="Quantity">
+                        <div class="type__content_img">
+                        <h2 class="type__title_img">How much would you like?</h2>
+                        <img src="imgs/pastga.svg" alt="" width="16" height="11">
+                         </div>
+                        <ul class="type__coffe_list">
+                            <li class="color__white1">
+                                <h2 class="color-white">250g</h2>
+                                <p class="color__white2">Distinct, high quality coffee from a specific family-owned farm</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">500g</h2>
+                                <p class="type__coffe_text">Just like regular coffee, except the caffeine has been removed</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">1000g</h2>
+                                <p class="type__coffe_text">Combination of two or three dark roasted beans of organic coffees</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="type__content" id="GrindOption">
+                        <div class="type__content_img">
+                        <h2 class="type__title_img">Want us to grind them?</h2>
+                        <img src="imgs/pastga.svg" alt="" width="16" height="11">
+                         </div>
+                        <ul class="type__coffe_list">
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Wholebean</h2>
+                                <p class="type__coffe_text">Best choice if you cherish the full sensory experience</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Filter</h2>
+                                <p class="type__coffe_text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                            </li>
+                            <li class="color__white1">
+                                <h2 class="color-white">Cafetiére</h2>
+                                <p class="color__white2"> Course ground beans specially suited for french press coffee</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="type__content" id="deliveries">
+                        <div class="type__content_img">
+                        <h2 class="type__title_img">How often should we deliver?</h2>
+                        <img src="imgs/pastga.svg" alt="" width="16" height="11">
+                         </div>
+                        <ul class="type__coffe_list">
+                            <li class="color__white1">
+                                <h2 class="color-white">Every week</h2>
+                                <p class="color__white2">$7.20 per shipment. Includes free first-class shipping.</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Every 2 weeks</h2>
+                                <p class="type__coffe_text">$9.60 per shipment. Includes free priority shipping.</p>
+                            </li>
+                            <li class="type__coffe_item">
+                                <h2 class="type__coffe_title">Every month</h2>
+                                <p class="type__coffe_text">$12.00 per shipment. Includes free priority shipping.</p>
+                            </li>
+                        </ul>
+                        <div class="order">
+                            <div class="order__content">
+                                <p class="order__text">Order Summary</p>
+                                <p class="order__text_span">“I drink my coffee as <span class="color__green">Filter</span>, with a <span class="color__green">Decaf</span> type of bean. <span class="color__green">250g</span> ground ala <span class="color__green">Cafetiare</span>, sent to me <span class="color__green">Every Week</span>.”</p>
+                            </div>
+                            <a class="order__link" href="#">Create my plan!</a>
+                        </div>
+                      
+                    </div>
                 </div>
+             
+
+                </div>
+            </div>
+
             </div>
         </section>
     </main>
+    <footer class="site__footer">
+            <div class="footer">
+            <a href="home.html"><img class="footer__img" src="imgs/logowh.svg" alt="logotip"></a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="foooter__link" href="home.html">HOME</a>
+                </li>
+                <li class="footer__item">
+                    <a class="foooter__link" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="footer__item">
+                    <a class="foooter__link" href="greatplan.html">Create your plan</a>
+                </li>
+            </ul>
+            <ul class="media__lsit">
+                <li class="media__item">
+                    <a href="#">
+                        <img class="media__imgs " src="imgs/facebook.png" alt="">
+                    </a>
+                </li>
+                <li class="media__item">
+                    <a href="#">
+                        <img class="media__imgs" src="imgs/twiter.png" alt="">
+                    </a>
+                </li>
+                <li class="media__item">
+                    <a href="#">
+                        <img class="media__imgs" src="imgs/instagram.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

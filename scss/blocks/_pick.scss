@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     max-width: 1280px;
     height: 580px;
+    margin-bottom: 168px;
 }
 .pick_line-box{
     padding-top: 113px;
@@ -66,6 +67,7 @@
         padding: 0;
     }
     .pick__content{
+        background-image: url("../../imgs/backg2.png");
         max-width: 1050px;
         margin-top: 24px;
         padding: 0;
@@ -103,6 +105,8 @@
 }
 @media only screen and (max-width:727px){
     .pick__content{
+        display: inline-block;
+        text-align: center;
         background-image:none;
         background-color: #293039;
         width: 100%;
@@ -114,19 +118,19 @@
         display: none;
     }
     .pick__list{
+        padding: 0;
         display: flex;
         flex-direction: column;
-        padding: 0;
+        display: inline-block;
         text-align: center;
-        padding-left: 50px;
-        padding-top: 80px;
+       
     }
     .pick__item{
         max-width: 370px;
     }
     .pick__title{
-        text-align: none;
-        text-align: center;
+        margin: 0;
+        margin-bottom: 24px;
     }
     .pick__item-title{
         margin-bottom: 24px;
@@ -140,6 +144,7 @@
         color: #FFFFFF;
     }
     .pick__text{
+        margin: 0;
         margin-bottom: 56px;
         margin-left: 24px;
         margin-right: 24px;
@@ -150,10 +155,17 @@
         color: #FFFFFF;
     }
 }
-@media only screen and (max-width:470px){
+@media only screen and (max-width:500px){
+    .pick__content{
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+        
+        
+    }
     .pick__list{
         padding: 0;
-        padding-top: 80px;
+        display: inline-block;
         text-align: center;
     }
 }
