@@ -1,0 +1,113 @@
+.our__content-img{
+    display: flex;
+    align-items:center;
+    margin-top: 137px;
+    margin-left: 105px;
+}
+.our__img{
+    margin-right: 125px;
+    padding-left: 40px;
+    padding-bottom: 86px;
+    max-width: 485px;
+    height: 606px;
+    margin-bottom: 158px;
+}
+.our__imgs{
+    border-radius: 10px;
+}
+.our__content{
+    max-width: 550px;
+    margin-top: -210px;
+}
+.our__title{
+    font-family: 'Fraunces ' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333D4B;
+    margin-bottom: 32px;
+}
+.our__text{
+    max-width: 539px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:1050px){
+    .our__content-img{
+        margin-left: 19px;
+    }
+    .our__img{
+        margin: 0;
+        padding: 0;
+        margin-right: 69px;
+        padding-bottom: 136px;
+        max-width: 485px;
+        height: 470px;
+        margin-bottom: 158px;
+    }
+    .our__content{
+        max-width: 350px;
+        margin-top: -100px;
+    }
+    .our__title{
+        @include font;
+        font-size: 32px;
+        line-height: 48px;
+        color: #333D4B;
+    }
+    .our__text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        opacity: 0.8;
+        margin-bottom: 180px;
+    }
+}
+@media only screen and (max-width:850px){
+    .our__imgs{
+        max-width: 314px;
+        height: 470px;
+    }
+}
+@media only screen and(max-width:727px){
+    .our__content-img{
+        margin: 0;
+        margin-top: 137px;
+        flex-direction: column;
+    }
+    .our__title{
+        text-align: center;
+    }
+    .our__text{
+        text-align: center;
+    }
+    .our__img{
+        margin: 0 auto;
+        padding: 0;
+        display: inline-block;
+        margin-bottom: 128px;
+    }
+    .our__imgs{
+        height: auto;
+        max-width: 400px;
+    }
+}
+@media only screen and (max-width:450px){
+    .our__img{
+        margin: 0;
+        margin-bottom: 48px;
+    }
+    .our__imgs{
+        height: auto;
+        max-width: 310px;
+    }
+    .our__text{
+        text-align: center;
+    }
+}

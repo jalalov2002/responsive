@@ -1,0 +1,84 @@
+.abouts__content-img{
+    background-image:url("../../imgs/about-us-backg-img.png");
+    background-repeat:no-repeat;
+    max-width: 1280px;
+    height: 450px;
+    border-radius: 10px;
+}
+.anouts__content{
+    padding-top: 137px;
+    padding-left: 85px;
+    max-width: 525px;
+}
+.abouts__title{
+    font-family: 'Fraunces ' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+    padding-bottom: 24px;
+}
+.abouts__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+} 
+@media only screen and(max-width:1050px){
+    .anouts__content{
+        max-width: 445px;
+    }
+    .abouts__title{
+        @include font;
+        font-size: 32px;
+        line-height: 40px;
+        color: #FEFCF7;
+    }
+    .abouts__text{
+        font-size: 15px;
+        line-height: 25px;
+        color: #FEFCF7;
+        opacity: 0.8;
+    }
+}
+@media only screen and(max-width:900px){
+    .abouts__content-img{
+        background-image:url("../../imgs/tabletabouthero.jpg");
+        background-repeat:no-repeat;
+        background-size: 100%;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .anouts__content{
+        max-width: 485px;
+    }
+}
+@media only screen and (max-width:727px){
+    .abouts__content-img{
+        background-image:url("../../imgs/aboutsmobil.jpg");
+        background-repeat:no-repeat;
+        background-size: 100%;
+        height: 400px;
+        border-radius: 10px;
+    } 
+    .anouts__content{
+        padding: 0;
+        padding: 111px 24px 87px 24px;
+        text-align: center;
+    }
+    .abouts__title{
+        @include font;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        color: #FEFCF7;
+    }
+    .abouts__text{
+        font-size: 15px;
+        line-height: 25px;
+        color: #FEFCF7;
+        text-align: center;
+        opacity: 0.8;
+    }
+}

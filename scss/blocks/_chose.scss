@@ -1,0 +1,189 @@
+.choes__section{
+    margin-top: 180px;
+}
+.chose__texts{
+    padding-top: 121px;
+    position: relative;
+    background-color: #282F38;
+    border-radius: 10px;
+    padding-bottom: 86px;
+}
+.chose__title{
+    text-align: center;
+    margin-bottom: 32px;
+    @include font;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+.chose__text{
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+.chose__list{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.chose__item{
+    max-width: 350px;
+    padding: 72px 48px 48px 47px;
+    background: #0E8784;
+    border-radius: 8px;
+    text-align: center
+}
+.chose__item_title{
+    @include font;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FEFCF7;
+    margin-bottom: 24px;
+}
+.chose__item_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+.chose__item:nth-child(1)::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../../imgs/ball.svg");
+    background-repeat: no-repeat;
+    width: 71px;
+    height: 72px;
+    margin-bottom: 56px;
+}
+.chose__item:nth-child(2)::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../../imgs/suprise.svg");
+    background-repeat: no-repeat;
+    width: 71px;
+    height: 72px;
+    margin-bottom: 56px;
+}
+.chose__item:nth-child(3)::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../../imgs/car__svg.svg");
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 50px;
+    margin-bottom: 67px;
+}
+.chose__box{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 247px;
+    background-color: #282F38;
+    border-radius: 10px;
+    top: 95%;
+
+}
+@media only screen and(max-width:1200px){
+    .chose__list{
+        flex-direction: column;
+    }
+    .chose__item{
+        padding: 0;
+        padding: 41px 48px 41px 70px;
+        margin: 0 auto;
+        gap: 55px;
+        display: flex;
+        margin-bottom: 24px;
+        max-width: 90%;
+        text-align: start;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .chose__list_text{
+        max-width: 525px;
+    }
+    .chose__item_text{
+        text-align: start;
+    }
+    .chose__item:nth-child(1)::before,
+    .chose__item:nth-child(2)::before,
+    .chose__item:nth-child(3)::before{
+        margin-bottom: 0;
+    }
+    .chose__box{
+        height: 350px;
+    }
+}
+@media only screen and(max-width:900px){
+    .chose__list_text{
+        max-width: 344px;
+    }   
+    .chose__item{
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width:760px){
+    .chose__item{
+        max-width: 600px;
+    }
+}
+
+@media only screen and(max-width:727px){
+    .chose__box{
+        background-color: #282F38;
+        height: 660px;
+        top: 90%;
+    }
+    .chose__texts{
+        padding-top: 64px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+    .chose__title{
+        @include font;
+        font-size: 28px;
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FEFCF7;
+    }
+    .chose__text{
+        font-size: 15px;
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 25px;
+        text-align: center;
+        opacity: 0.8;
+    }
+    .chose__list{
+        padding-top: 36px;
+        padding: inherit;
+    }
+    .chose__item{
+        padding: 0;
+        margin: 0;
+        padding: 72px 12px 51px 12px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        flex-direction: column;
+    }  
+    .chose__list_text{
+        text-align: center;
+    }
+    .chose__item_text{
+        text-align: center;
+    }
+}
+@media only screen and(max-width:757px){
+    .chose__item{
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+}

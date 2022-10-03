@@ -1,0 +1,186 @@
+.espresso{
+    padding-top: 130px;
+    background-image:url("../../imgs/backround__img_espresso_section.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+.espresso__content_img{
+    display: flex;
+    justify-content: center;
+}
+.espresso__item_img{
+    max-width: 255px;
+    margin-bottom: 71px;
+}
+.espresso__list{
+    display: flex;
+    justify-content: space-between;
+}
+.espresso__item{
+    align-items:center;
+    padding-right: 30px;
+    max-width: 1000px;
+}
+.espresso__img{
+    padding-bottom: 71px;
+}
+.espresso__content_title{
+    font-family: 'Fraunces' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+    padding-bottom: 24px;
+}
+.espresso__content_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+}
+
+@media only screen and(max-width:1050px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        padding-top: 150px;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    .espresso__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .espresso__item{
+        max-width: 900px;
+        display: flex;
+        align-items: flex-start;
+        max-width: 585px;
+    }
+    .espresso__content_title{
+        text-align: start;
+    }
+    .espresso__content_text{
+        text-align: start;
+    }
+}
+@media only screen and(max-width:900px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        padding-top: 130px;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    .espresso__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .espresso__item{
+        margin: 0;
+        max-width: 900px;
+        display: flex;
+        align-items: flex-start;
+        max-width: 585px;
+    }
+    .espresso__content_title{
+        text-align: start;
+    }
+    .espresso__content_text{
+        text-align: start;
+    }
+}
+@media only screen and(max-width:727px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-size: 580px;
+        margin-bottom: 13px;
+    }
+    .espresso__list{
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .espresso__item{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .espresso__content_title{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+        text-align: center;
+        max-width: 300px;
+    }
+    .espresso__img_coofe{
+        padding-top: 100px;
+    }
+    .espresso__item_img{
+        margin: 0;
+        padding: 0;
+        display: inline;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .espresso__content_text{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        max-width: 300px;
+        margin-bottom: 48px;
+    }
+}
+@media only screen and (max-width:570px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-size: 500px;
+    }
+}
+@media only screen and (max-width:460px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-size: 400px;
+    }
+}
+@media only screen and (max-width:375px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-size: 340px;
+    }
+}
+@media only screen and (max-width:330px){
+    .espresso{
+        margin: 0;
+        padding: 0;
+        background-image: url("../../imgs/backround__img_espresso_section.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+}

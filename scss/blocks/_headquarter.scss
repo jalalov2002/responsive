@@ -1,0 +1,105 @@
+.headquarter__content{
+    margin-top: 144px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+.headquarter__title{
+    font-family: 'Fraunces' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin-bottom: 72px;
+}
+.headquarter__list{
+    display: flex;
+    justify-content: space-between;
+}
+.headerquarter__img{
+    margin-bottom: 45px;
+}
+.headquarter__item-title{
+    font-family: 'Fraunces' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 24px;
+}
+.headquarter__item_text{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    max-width: 125px;
+    letter-spacing: 1px;
+}
+.headquarter__item:nth-child(1)::before{
+    content:"";
+    display: inline-block;
+    background-image: url("../../imgs/karta-a.svg");
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 49px;
+    margin-bottom: 48px;
+}
+.headquarter__item:nth-child(2)::before{
+    content:"";
+    display: inline-block;
+    background-image: url("../../imgs/kartab.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 43px;
+    margin-bottom: 48px;
+}
+.headquarter__item:nth-child(3)::before{
+    content:"";
+    display: inline-block;
+    background-image: url("../../imgs/karta-c.svg");
+    background-repeat: no-repeat;
+    width: 51px;
+    height: 49px;
+    margin-bottom: 48px;
+}
+@media only screen and (max-width:1050px){
+    .headquarter__content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .headquarter__item-title{
+        @include font;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333D4B;
+    }
+}
+@media only screen and (max-width:727px){
+    .headquarter__list{
+        flex-direction: column;
+    }
+    .headquarter__title{
+        text-align: center;
+    }
+    .headquarter__item{
+        text-align: center;
+    }
+    .headquarter__item-title{
+        @include font;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        color: #333D4B;
+        margin-bottom: 22px;
+    }
+    .headquarter__item_text{
+        margin-bottom: 80px;
+    }
+    .headquarter__item:nth-child(1)::before,
+    .headquarter__item:nth-child(2)::before,
+    .headquarter__item:nth-child(3)::before{
+        margin-bottom: 47px;
+    }
+}
